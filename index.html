@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dEV-Faj | Software Developer</title>
+	<meta name="description" content="My Software Development Portfolio" />
+	<meta name="author" content="Emmanuel Fajumo" />
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+</head>
+
+<body>
+	<div class="mainbody">
+		<!-- Navigation and Hero section -->
+		<div class="container-fluid hero pb-5" id="herro">
+			<div class="row nav-bg py-3 px-5">
+				<div class="col-md-12 ">
+					<nav class="navbar navbar-expand-lg  text-light ">
+						<div class="container-fluid d-flex justify-content-between">
+							<a class="navbar-brand logo" style="width: 30%;" href="#"><span>Dev</span>Fajumo.</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+								data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav  mb-2 mb-lg-0 d-flex justify-content-between" style="width: 80%;">
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="#aboutMe">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#services">Services</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#projects">Projects</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#contact">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="btn btn-lg bg-outline-light" onclick="
+	   							document.getElementById('herro').style = 'background-image:url(media/hero1.png)';
+	   							"> Switch</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+
+			<div class="row pt-5 ps-5 d-md-flex d-none">
+				<div class="col-md-4">
+					<h4 class="text-danger py-3 badge">#Software Develoment</h4> <br>
+					<h4 class="text-danger py-3 badge">#Website Design</h4> <br>
+					<h4 class="text-danger py-3 badge">#Graphic Design</h4> <br>
+					<h4 class="text-danger py-3 badge">#Javascript</h4> <br>
+					<h4 class="text-danger py-3 badge">#Wordpress</h4> <br>
+					<h4 class="text-danger py-3 badge">#Bootstrap</h4> <br>
+					<h4 class="text-danger py-3 badge">#HTML</h4> <br>
+					<h4 class="text-danger py-3 badge">#CSS</h4>
+				</div>
+			</div>
+
+			<div class="row bigtext">
+				<div class="col-md-12" style="min-height: 50px;"></div>
+				<div class="col-md-12 d-flex justify-content-center align-item-center text-center"
+					style="min-height:100px; ">
+					<div class="py-3 px-5 hero-text" style="width: 50%;">
+						<h1 class="name pt-3 ">HELLO!</h1>
+						<h2>I AM A SOFTWARE DEVELOPER</h2>
+						<form class="row" method="post" action="media/mycv.pdf" target="_blank">
+							<div class="col-md-4 ">
+								<input type="text" class="form-control form-control-lg form" placeholder="YOUR NAME*"
+									name="firstname" id="fname">
+							</div>
+							<div class="col-md-4 ">
+								<input type="email" class="form-control form-control-lg form" placeholder="EMAIL*"
+									name="email" id="email">
+							</div>
+							<div class="col-md-4">
+								<button type="button"
+									class="btn btn-lg btn-info form-control form-control-lg form-submit" onclick="
+			   				  			var e_mail = document.getElementById('email').value;
+			   				  			if(e_mail.trim().length == 0){
+			   				  				alert('Email field cannot be empty, kindly input your email to view my resume. Thanks!')
+			   				  			}
+			   				  			else{
+			   				  				alert('Thank you for enterting your email, kindly press okay to view my resume. Happy to hear from you soon!')
+			   				  			}
+										f_name(firstName);
+
+			   				  		">GET MY RESUME</button>
+
+
+							</div>
+						</form>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="socials">
+						<a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+							aria-controls="offcanvasWithBothOptions"> <i class="fa-solid fa-comment"></i> </a>
+						<a href="https://www.facebook.com/profile.php?id=100006743087755" target="_blank"> <i
+								class="fa-brands fa-square-facebook"></i> </a>
+						<a href="https://www.instagram.com/fajumo__mhanuel/?hl=en" target="_blank"> <i
+								class="fa-brands fa-instagram"></i> </a>
+						<a href="https://www.linkedin.com/in/emmanuel-fajumo-5799b8223/" target="_blank"> <i
+								class="fa-brands fa-linkedin-in"></i> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Navigation and Hero Ends  -->
+
+		<!-- Social Links -->
+
+
+		<!-- About Me -->
+		<div class="container-fluid bgcolor pt-3 pb-5 px-2" id="aboutMe">
+			<div class="row">
+				<div class="col-md-12 pb-5">
+					<h3 class="anchor "># About</h3>
+				</div>
+				<div class="col-md-10 offset-md-1 py-5">
+					<p class="large-paragraph text-light">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm
+						a versatile <span>developer who partners with founders to turn ideas into real products.</span>
+						I focus on clear interfaces, sharp decisions, and fast execution. </p>
+				</div>
+			</div>
+			<div class="row pb-5">
+
+				<div class="col-md-5 offset-md-6 text-light">
+					<p class="fs-4 pb-3">Bringing your vision to life quickly and efficiently - Whether it's branding,
+						websites or web applications, I've got it covered. Delivering smooth and effective solitions
+						from start to finish.</p>
+
+					<a href="#" class="text-light btn btn-outline-light btn-lg rounded"> See my Work</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<hr />
+				</div>
+			</div>
+		</div>
+		<!-- About Me Ends -->
+
+		<!-- Services  -->
+		<div class="container-fluid bgcolor pt-3 pb-5 px-2" id="services">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="anchor "># Services</h3>
+				</div>
+				<div class="col-md-2 offset-md-2 ">
+					<span class="serv">01</span>
+				</div>
+				<div class="col-md-6 pt-5 ">
+					<h2 class="large-paragraph pt-5">Web Application</h2>
+					<p class="fs-4 pb-3 text-light">Branding that builds trust and drives loyality through clear
+						visuals<br /> and messageing into unforgettable online experience.</p>
+
+					<hr>
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">HTML</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 95%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">CSS</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 40%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">JAVASCRIPT</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 10%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">BOOTSTRAP</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 75%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">PHP</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 0%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-md-2 offset-md-2">
+					<span class="serv">02</span>
+				</div>
+				<div class="col-md-6 pt-5">
+					<h2 class="large-paragraph pt-5">Website Design</h2>
+					<p class="fs-4 pb-3 text-light">Branding that builds trust and drives loyality through clear
+						visuals<br /> and messageing into unforgettable online experience.</p>
+
+					<hr>
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">WORDPRESS</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 99%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">WIX</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 90%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">GOHIGHLEVEL</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 70%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">SHOPIFY</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 50%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">ELEMENTOR</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 90%; background-color: red; height: 10px;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-2 offset-md-2">
+					<span class="serv pe-5">03</span>
+				</div>
+				<div class="col-md-6 pt-5">
+					<h2 class="large-paragraph pt-5">Graphic Design</h2>
+					<p class="fs-4 pb-3 text-light">Branding that builds trust and drives loyality through clear
+						visuals<br /> and messageing into unforgettable online experience.</p>
+
+					<hr />
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">BRANDING</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 50%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">LOGO DESIGN</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 90%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">CANVA</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 70%; background-color: red; height: 10px;"></div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row skill py-2">
+						<div class="col-md-4">
+							<p class="fs-5 text-light my-0">AI IMPLEMENTATION</p>
+						</div>
+						<div class="col-md-6 py-3 pe-5">
+							<div class="progress" role="progressbar" aria-label="Animated striped example"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style=" height: 10px;">
+								<div class="progress-bar progress-bar-striped progress-bar-animated"
+									style="width: 90%; background-color: red; height: 10px;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Services Ends -->
+
+		<!-- Projects -->
+		<div class="container-fluid bgcolor pt-3 pb-5 px-2" id="projects">
+			<div class="row g-5">
+				<div class="col-md-12 py-5">
+					<h3 class="anchor "># Projects</h3>
+				</div>
+			</div>
+
+			<div class="row projectt">
+				<div class="col-md-4 my-5">
+					<div class="card proj shadow-lg">
+						<a href="#" class="rounded mb-3" onmouseover="
+		   					document.getElementById('project1').src = 'media/ecommerce1.png';
+		   				">
+							<img src="media/ecommerce.png" class="img-fluid rounded" id="project1">
+						</a>
+						<h4>Fashion E-commerce Store</h4>
+						<p>Working with Emmanuel was one of the best decisions for our business. He delivered exactly
+							what we needed; professional, responsive, and with great attention to detail. Our website
+							now looks amazing, </p>
+						<div class="d-flex justify-content-start align-item-cente tools">
+							<span class="badge text-bg-primary m-2">HTML</span>
+							<span class="badge text-bg-secondary  m-2">Bootstrap</span>
+							<span class="badge text-bg-success  m-2">Javascript</span>
+							<span class="badge text-bg-danger  m-2">React</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 my-5">
+					<div class="card proj shadow-lg">
+						<a href="#" class="rounded mb-3" onmouseover="
+		   					document.getElementById('project2').src = 'media/travell.png'
+			   			">
+							<img src="media/travel.png" class="img-fluid rounded" id="project2">
+						</a>
+						<h4>Fashion E-commerce Store</h4>
+						<p>Working with Emmanuel was one of the best decisions for our business. He delivered exactly
+							what we needed; professional, responsive, and with great attention to detail. Our website
+							now looks amazing, </p>
+						<div class="d-flex justify-content-start align-item-center tools">
+							<span class="badge text-bg-primary m-2">HTML</span>
+							<span class="badge text-bg-secondary  m-2">Bootstrap</span>
+							<span class="badge text-bg-success  m-2">Javascript</span>
+							<span class="badge text-bg-danger  m-2">React</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 my-5">
+					<div class="card proj shadow-lg">
+						<a href="#" class="rounded mb-3" onmouseover="
+		   					document.getElementById('project2').src = 'media/travell.png'
+			   			">
+							<img src="media/travel.png" class="img-fluid rounded" id="project2">
+						</a>
+						<h4>Fashion E-commerce Store</h4>
+						<p>Working with Emmanuel was one of the best decisions for our business. He delivered exactly
+							what we needed; professional, responsive, and with great attention to detail. Our website
+							now looks amazing, </p>
+						<div class="d-flex justify-content-start align-item-center tools">
+							<span class="badge text-bg-primary m-2">HTML</span>
+							<span class="badge text-bg-secondary  m-2">Bootstrap</span>
+							<span class="badge text-bg-success  m-2">Javascript</span>
+							<span class="badge text-bg-danger  m-2">React</span>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="col-md-4 my-5">
+					<div class="card proj shadow-lg">
+						<a href="#" class="rounded mb-3" onmouseover="
+		   					document.getElementById('project3').src = 'media/teens1.png';
+		   				">
+							<img src="media/teens.png" class="img-fluid rounded" id="project3">
+						</a>
+						<h4>Fashion E-commerce Store</h4>
+						<p>Working with Emmanuel was one of the best decisions for our business. He delivered exactly
+							what we needed; professional, responsive, and with great attention to detail. Our website
+							now looks amazing, </p>
+						<div class="d-flex justify-content-start align-item-center tools">
+							<span class="badge text-bg-primary m-2">HTML</span>
+							<span class="badge text-bg-secondary  m-2">Bootstrap</span>
+							<span class="badge text-bg-success  m-2">Javascript</span>
+							<span class="badge text-bg-danger  m-2">React</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 my-5 ">
+					<div class="card proj shadow-lg">
+						<a href="#" class="rounded mb-3" id="project4" onmouseover="
+		   					document.getElementById('project4').src = 'media/gtb.png';
+		   				">
+							<img src="media/gtb.png" class="img-fluid rounded">
+						</a>
+						<h4>Fashion E-commerce Store</h4>
+						<p>Working with Emmanuel was one of the best decisions for our business. He delivered exactly
+							what we needed; professional, responsive, and with great attention to detail. Our website
+							now looks amazing, </p>
+						<div class="d-flex justify-content-start align-item-center tools">
+							<span class="badge text-bg-primary m-2">HTML</span>
+							<span class="badge text-bg-secondary  m-2">Bootstrap</span>
+							<span class="badge text-bg-success  m-2">Javascript</span>
+							<span class="badge text-bg-danger  m-2">React</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 my-5">
+					<div class="card proj shadow-lg">
+						<a href="#" class="rounded mb-3" onmouseover="
+		   					document.getElementById('project5').src = 'media/ms.png';
+		   				">
+							<img src="media/ms.png" class="img-fluid rounded" id="project5">
+						</a>
+						<h4>Fashion E-commerce Store</h4>
+						<p>Working with Emmanuel was one of the best decisions for our business. He delivered exactly
+							what we needed; professional, responsive, and with great attention to detail. Our website
+							now looks amazing, </p>
+						<div class="d-flex justify-content-start align-item-center tools">
+							<span class="badge text-bg-primary m-2">HTML</span>
+							<span class="badge text-bg-secondary  m-2">Bootstrap</span>
+							<span class="badge text-bg-success  m-2">Javascript</span>
+							<span class="badge text-bg-danger  m-2">React</span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 my-5 ">
+					<div class="card proj shadow-lg">
+						<a href="#" class="rounded mb-3" id="project6" onmouseover="
+		   					document.getElementById('project6').src = 'media/fb.png';
+		   				">
+							<img src="media/fb.png" class="img-fluid rounded">
+						</a>
+						<h4>Fashion E-commerce Store</h4>
+						<p>Working with Emmanuel was one of the best decisions for our business. He delivered exactly
+							what we needed; professional, responsive, and with great attention to detail. Our website
+							now looks amazing, </p>
+						<div class="d-flex justify-content-start align-item-center tools">
+							<span class="badge text-bg-primary m-2 ">HTML</span>
+							<span class="badge text-bg-secondary  m-2">Bootstrap</span>
+							<span class="badge text-bg-success  m-2">Javascript</span>
+							<span class="badge text-bg-danger  m-2">React</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 my-5">
+					<div class="card proj shadow-lg">
+						<a href="#" class="rounded mb-3" id="project6" onmouseover="
+		   					document.getElementById('project6').src = 'media/fb.png';
+		   				">
+							<img src="media/fb.png" class="img-fluid rounded">
+						</a>
+						<h4>Fashion E-commerce Store</h4>
+						<p>Working with Emmanuel was one of the best decisions for our business. He delivered exactly
+							what we needed; professional, responsive, and with great attention to detail. Our website
+							now looks amazing, </p>
+						<div class="d-flex justify-content-start align-item-center tools">
+							<span class="badge text-bg-primary m-2">HTML</span>
+							<span class="badge text-bg-secondary  m-2">Bootstrap</span>
+							<span class="badge text-bg-success  m-2">Javascript</span>
+							<span class="badge text-bg-danger  m-2">React</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 my-5">
+					<div class="card proj shadow-lg">
+						<a href="#" class="rounded mb-3" id="project6" onmouseover="
+		   					document.getElementById('project6').src = 'media/fb.png';
+		   				">
+							<img src="media/fb.png" class="img-fluid rounded">
+						</a>
+						<h4>Fashion E-commerce Store</h4>
+						<p>Working with Emmanuel was one of the best decisions for our business. He delivered exactly
+							what we needed; professional, responsive, and with great attention to detail. Our website
+							now looks amazing, </p>
+						<div class="d-flex justify-content-start align-item-center tools">
+							<span class="badge text-bg-primary m-2">HTML</span>
+							<span class="badge text-bg-secondary  m-2">Bootstrap</span>
+							<span class="badge text-bg-success  m-2">Javascript</span>
+							<span class="badge text-bg-danger  m-2">React</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Projects -->
+
+		<!-- Testimonial -->
+		<div class="container-fluid bgcolor pt-3 pb-5 px-2 d-flex align-items-center" style="height: 800px;">
+			<div class="row py-5">
+				<div class="col-md-6 offset-md-3 d-flex justify-content-center align-item-center py-5 px-5"
+					style="min-height:300px; background-color:#dd1c1a ;">
+					<div class="testimonial">
+						<img src="media/3.jpg" class="img-fluid" style="border-radius:50%; width:70px;">
+						<p class="fs-5 text-light text-center">
+							“Working with Emmanuel was one of the best decisions for our business. He delivered exactly
+							what we needed; professional, responsive, and with great attention to detail. Our website
+							now looks amazing, functions perfectly, and has helped us attract more clients. I highly
+							recommend his services to anyone looking for quality and reliability.”
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Testimoial End -->
+
+
+		<!-- Footer -->
+		<div class="container-fluid bgcolor pt-3" id="contact">
+			<div class="row pb-5">
+				<div class="col-md-4 text-center offset-md-4">
+					<a class="navbar-brand logo" style="width: 30%;" href="#"
+						id="footerlogo"><span>Dev</span>Fajumo.</a>
+					<h3 class="py-3">Are You Ready to Work with Me? <br>Don't be Shy, Say Hello!</h3>
+					<div class="d-flex justify-content-center py-5">
+						<a href="#" class="px-5 fs-5" type="button" data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasWithBothOptions"
+							aria-controls="offcanvasWithBothOptions" 
+							onclick="
+							 firstName = document.getElementById('fname').value;
+							f_name(firstName);
+							">fajumoe@gmail.com</a>
+						<a href="#" class="px-5 fs-5">+234-810-880-5480</a>
+
+
+						
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="height: 80px;width: 100%; background-color:#dd1c1a ;">
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+
+
+
+
+		<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+			aria-labelledby="offcanvasWithBothOptionsLabel">
+			<div class="offcanvas-header" style="background-color:#dd1c1a;">
+				<h5 class="offcanvas-title text-light" id="offcanvasWithBothOptionsLabel">Kindly State Your Request</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body bg-dark">
+				<textarea class="form-control form-control-lg " placeholder="Your message" id="mess"></textarea>
+				<button type="submit" class="btn btn-lg form-control form-control-lg mt-3"
+					style="background-color:#dd1c1a; color: white;"> Send</button>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="bootstrap/js/bootstrap.bundle.min.js">
+
+		var firstName = document.getElementById('fname').value ;
+		
+		function f_name (guestName){
+			document.getElementById('mess').value = 'Hi ' + guestName + ', You are welcome! How can we help you?'
+		}
+
+
+	</script>
+</body>
+
+</html>

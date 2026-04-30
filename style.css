@@ -1,0 +1,149 @@
+	/*font-family: "EB Garamond", serif;
+		font-family: "Open Sans", sans-serif;
+		*/
+
+
+		.mainbody{
+			padding: 0px 15px;
+		}
+		p{
+			font-family: "Open Sans", sans-serif;
+			color: white;
+		}
+		h1, h2, h3, h4, a {
+			font-family: "EB Garamond", serif;
+			color: white;
+		}
+		.hero{
+			background-image: url("media/banner.png");
+			min-height: 900px;
+			background-position: top center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.nav-bg{
+			background-color:rgba(255, 255, 255, 0.2) ;
+		}
+
+		.nav-link{
+			color: black;
+			font-size: 1.5em;
+			font-weight: 500;
+
+		}
+		.logo{
+			color: black;
+			font-weight: 900;
+			font-size: 2.5em;
+		}
+		.logo span{
+			color: #dd1c1a;
+		}
+		.name{
+			font-weight: 900;
+			font-size: 6em;
+			color: white;
+			text-align: center;
+		}
+		.name h2{
+			font-size: 4em;
+			font-weight: 600;
+		}
+		.name span {
+			color: transparent; 
+  			-webkit-text-stroke: 2px white; 
+		}
+		.hero-text{
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(128, 128, 128, 0.9), rgba(0, 0, 0, 0.9));
+		}
+		.socials{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+		}
+		.socials a {
+			font-size: 50px;
+			color: #dd1c1a;
+		}
+		.form{
+			height: 70px;
+			border: none;
+			border-radius: 0px;
+		}
+		.form-submit{
+			background-color: #dd1c1a ;
+			height:70px;
+			border: none;
+			border-radius: 0px;
+			color: white;
+		}
+		.anchor{
+			color: #dd1c1a;
+			font-size: 1.4em;
+		}
+		.bgcolor{
+			background-color: black;
+			min-height: 200px;
+		}
+
+		.large-paragraph{
+			font-size: 5.2em;
+			font-weight: 600;
+			line-height: 90px;
+		} 
+		.large-paragraph span{
+			color: #dd1c1a;
+		}
+		.serv{
+			font-size: 15em;
+  			-webkit-text-stroke: 2px white; 			
+		}
+		.skill{
+			border-top: 0.5px solid gray;
+		}
+		.testimonial{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		#footerlogo{
+			color: white;
+		}
+
+		.proj{
+			background-color: transparent;
+		}
+
+		.projectt{
+			padding: 0px 100px;
+		}
+		.tools{
+			flex-wrap: wrap;
+		}
+
+			@media (max-width: 480px) {
+			  body {
+			    padding: 0 10px;
+			  }
+
+			  .hero {
+			    min-height: 400px;
+			  }
+
+			  .bigtext {
+			    height: 400px;
+			    margin-top: 500px;
+			  }
+
+			  .large-paragraph {
+			    font-size: 3em;
+			  }
+
+			  .mainbody {
+			    padding: 0 20px;
+			  }
+			}
