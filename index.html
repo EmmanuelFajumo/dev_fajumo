@@ -152,7 +152,7 @@
 		<section class="container-fluid" id="services" aria-labelledby="services-title">
 			<div class="services-inner">
 				<header class="services-header">
-					<p class="anchor">Our Best Services</p>
+					<p class="anchor">Services</p>
 					<h2 id="services-title">Digital solutions built with quality, from idea to launch.</h2>
 				</header>
 
@@ -387,25 +387,94 @@
 			</div>
 		</div>
 
-		<!-- Testimonial -->
-		<div class="container-fluid bgcolor testimonial-section">
-			<div class="row py-5">
-				<div class="col-md-6 offset-md-3 d-flex justify-content-center align-items-center py-5 px-5">
-					<div class="testimonial">
-						<img src="media/3.jpg" class="img-fluid" alt="Portrait of a client" >
-						<p class="fs-5 text-light text-center">
-							“Working with Emmanuel was one of the best decisions for our business. He delivered exactly
-							what we needed; professional, responsive, and with great attention to detail. Our website
-							now looks amazing, functions perfectly, and has helped us attract more clients. I highly
-							recommend his services to anyone looking for quality and reliability.”
-						</p>
+		<!-- Testimonials -->
+		<section class="container-fluid bgcolor testimonial-section" aria-labelledby="testimonials-title">
+			<div class="testimonial-section-inner">
+				<header class="testimonial-header">
+					<div>
+						<p class="anchor">Client Reviews</p>
+						<h2 id="testimonials-title">Feedback from Fiverr clients</h2>
 					</div>
+					<div class="testimonial-overview">
+						<strong class="testimonial-overview-score">4.5<span>/5</span></strong>
+						<p>Average rating across 11 Fiverr reviews</p>
+					</div>
+				</header>
 
+				<div class="testimonial-grid">
+					<article class="testimonial-card">
+						<div class="testimonial-card-header">
+							<i class="fa-solid fa-quote-left testimonial-quote-mark" aria-hidden="true"></i>
+							<div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+							</div>
+						</div>
+						<blockquote>Emmanuel is very professional and knowledgeable in his work.</blockquote>
+						<footer class="testimonial-author">
+							<span class="testimonial-avatar" aria-hidden="true">E</span>
+							<div class="testimonial-author-info">
+								<cite>eparnel103</cite>
+								<span>United States - Fiverr client</span>
+							</div>
+						</footer>
+					</article>
+
+					<article class="testimonial-card">
+						<div class="testimonial-card-header">
+							<i class="fa-solid fa-quote-left testimonial-quote-mark" aria-hidden="true"></i>
+							<div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+							</div>
+						</div>
+						<blockquote>He was very patient with me and fulfilled my needs for my website. Will go to Emmanuel when I need work done again.</blockquote>
+						<footer class="testimonial-author">
+							<span class="testimonial-avatar" aria-hidden="true">P</span>
+							<div class="testimonial-author-info">
+								<cite>paxxfl</cite>
+								<span>United States - Fiverr client</span>
+							</div>
+						</footer>
+					</article>
+
+					<article class="testimonial-card">
+						<div class="testimonial-card-header">
+							<i class="fa-solid fa-quote-left testimonial-quote-mark" aria-hidden="true"></i>
+							<div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+								<i class="fa-solid fa-star" aria-hidden="true"></i>
+							</div>
+						</div>
+						<blockquote>I am very pleased with Emmanuel. I did not expect this level of creativity. His work and patience has been amazing. When I needed some changes to be made, he was ready and available to make those changes. I will definitely refer him to my friends and family.</blockquote>
+						<footer class="testimonial-author">
+							<span class="testimonial-avatar" aria-hidden="true">B</span>
+							<div class="testimonial-author-info">
+								<cite>bridgexcellence</cite>
+								<span>United States - Fiverr client</span>
+							</div>
+						</footer>
+					</article>
 				</div>
-			</div>
-		</div>
 
-		<!-- Testimoial End -->
+				<a class="testimonial-all-link" href="https://www.fiverr.com/stevelytics_01"
+					target="_blank" rel="noopener noreferrer">
+					Read all 11 reviews on Fiverr
+					<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+				</a>
+			</div>
+		</section>
+
+		<!-- Testimonials End -->
 
 
 		<!-- Footer -->
@@ -516,7 +585,7 @@
 		}
 
 		const revealTargets = document.querySelectorAll(
-			"#aboutMe .anchor, #aboutMe .large-paragraph, #aboutMe .row:nth-of-type(2) .col-md-5, #services .anchor, #services .services-header h2, #services .service-card, #projects .anchor, .proj, .testimonial-section .col-md-6, #contact .logo, #contact h3, #contact .d-flex, #contact .contact-accent"
+			"#aboutMe .anchor, #aboutMe .large-paragraph, #aboutMe .row:nth-of-type(2) .col-md-5, #services .anchor, #services .services-header h2, #services .service-card, #projects .anchor, .proj, .testimonial-section .testimonial-card, #contact .logo, #contact h3, #contact .d-flex, #contact .contact-accent"
 		);
 		revealTargets.forEach((element, index) => {
 			element.classList.add("reveal");
