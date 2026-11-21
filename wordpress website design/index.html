@@ -28,61 +28,70 @@
 
     <link rel="stylesheet" href="../fontawesome/css/all.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style.css?v=20261120">
-    <link rel="stylesheet" href="wordpress-website-design.css?v=20261120">
+    <link rel="stylesheet" href="../style.css?v=20261121">
+    <link rel="stylesheet" href="wordpress-website-design.css?v=20261121">
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 </head>
 
-<body>
+<body class="mainbody">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg service-navbar">
-        <div class="container">
-            <a class="navbar-brand logo" href="../index.html" aria-label="Dev Fajumo home">
-                <svg class="logo-mark" viewBox="0 0 48 48" role="img" aria-labelledby="headerLogoTitle">
-                    <title id="headerLogoTitle">DF monogram</title>
-                    <rect x="2" y="2" width="44" height="44" rx="13" fill="#10233a" stroke="#4ea5ff"
-                        stroke-width="2" />
-                    <path
-                        d="M11 12h8c8 0 13 4.7 13 12s-5 12-13 12h-8V12Zm6 5v14h2c4.5 0 7-2.4 7-7s-2.5-7-7-7h-2Z"
-                        fill="#78c0ff" />
-                    <path d="M23 18h11M23 18v14M23 25h9" fill="none" stroke="#edf5ff"
-                        stroke-linecap="round" stroke-width="2.5" />
-                </svg>
-                <span class="logo-wordmark">
-                    <span class="logo-name">Fajumo</span>
-                    <span class="logo-caption">DEV</span>
-                </span>
-            </a>
-
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#serviceNav"
-                aria-controls="serviceNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="fas fa-bars"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="serviceNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#projects">Projects</a>
-                    </li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="nav-contact" href="../index.html#contact">Let's Talk <i class="fas fa-arrow-up-right-from-square"></i></a>
-                    </li>
-                </ul>
+    <header class="container-fluid">
+        <div class="row nav-bg py-3 px-5">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg text-light">
+                    <div class="container-fluid d-flex justify-content-between">
+                        <a class="navbar-brand logo" href="../index.html#hero" aria-label="Dev Fajumo home">
+                            <svg class="logo-mark" viewBox="0 0 48 48" role="img" aria-labelledby="headerLogoTitle">
+                                <title id="headerLogoTitle">DF monogram</title>
+                                <rect x="2" y="2" width="44" height="44" rx="13" fill="#10233a" stroke="#4ea5ff"
+                                    stroke-width="2" />
+                                <path
+                                    d="M11 12h8c8 0 13 4.7 13 12s-5 12-13 12h-8V12Zm6 5v14h2c4.5 0 7-2.4 7-7s-2.5-7-7-7h-2Z"
+                                    fill="#78c0ff" />
+                                <path d="M23 18h11M23 18v14M23 25h9" fill="none" stroke="#edf5ff"
+                                    stroke-linecap="round" stroke-width="2.5" />
+                            </svg>
+                            <span class="logo-wordmark">
+                                <span class="logo-name">Fajumo</span>
+                                <span class="logo-caption">DEV</span>
+                            </span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html#aboutMe">About</a>
+                                </li>
+                                <li class="nav-item dropdown services-nav-item">
+                                    <button class="nav-link dropdown-toggle" id="servicesDropdown" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                    </button>
+                                    <ul class="dropdown-menu services-dropdown" aria-labelledby="servicesDropdown">
+                                        <li><a class="dropdown-item" href="../index.html#custom-development">Custom Website &amp; Web App Development</a></li>
+                                        <li><a class="dropdown-item" href="./" aria-current="page">WordPress Website Design</a></li>
+                                        <li><a class="dropdown-item" href="../index.html#website-seo">Website SEO &amp; Search Optimisation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html#projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="../index.html#contact" class="btn btn-sm nav-cta d-none d-lg-inline-flex">Let's talk</a>
+                    </div>
+                </nav>
             </div>
         </div>
-    </nav>
+    </header>
 
     <main>
 
@@ -373,6 +382,6 @@
     </footer>
 
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="wordpress-website-design.js?v=20261120"></script>
+    <script src="wordpress-website-design.js?v=20261121"></script>
 </body>
 </html>

@@ -1,20 +1,11 @@
 (function () {
     "use strict";
 
-    const navbar = document.querySelector(".service-navbar");
     const visual = document.querySelector(".visual-window");
     const hero = document.querySelector(".service-hero");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    function updateNavbar() {
-        if (!navbar) return;
-        navbar.classList.toggle("is-scrolled", window.scrollY > 12);
-    }
-
-    updateNavbar();
-    window.addEventListener("scroll", updateNavbar, { passive: true });
-
-    document.querySelectorAll(".navbar-collapse .nav-link, .navbar-collapse .nav-contact").forEach(function (link) {
+    document.querySelectorAll(".navbar-collapse a.nav-link, .navbar-collapse .dropdown-item").forEach(function (link) {
         link.addEventListener("click", function () {
             const menu = document.querySelector(".navbar-collapse.show");
             if (!menu || typeof bootstrap === "undefined") return;
