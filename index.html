@@ -70,8 +70,16 @@
 									<li class="nav-item">
 										<a class="nav-link" aria-current="page" href="#aboutMe">About</a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#services">Services</a>
+									<li class="nav-item dropdown services-nav-item">
+										<button class="nav-link dropdown-toggle" id="servicesDropdown" type="button"
+											data-bs-toggle="dropdown" aria-expanded="false">
+											Services
+										</button>
+										<ul class="dropdown-menu services-dropdown" aria-labelledby="servicesDropdown">
+											<li><a class="dropdown-item" href="#custom-development">Custom Website &amp; Web App Development</a></li>
+											<li><a class="dropdown-item" href="https://emmanuelfajumo.com.ng/wordpress-website-design/">WordPress Website Design</a></li>
+											<li><a class="dropdown-item" href="#website-seo">Website SEO &amp; Search Optimisation</a></li>
+										</ul>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="#projects">Projects</a>
@@ -182,7 +190,7 @@
 				</header>
 
 				<div class="services-grid">
-					<article class="service-card service-card--green">
+					<article class="service-card service-card--green" id="custom-development">
 						<div class="service-icon" aria-hidden="true">
 							<i class="fa-solid fa-laptop-code"></i>
 						</div>
@@ -197,7 +205,7 @@
 						</div>
 					</article>
 
-					<article class="service-card service-card--blue">
+					<article class="service-card service-card--blue" id="wordpress-design">
 						<div class="service-icon" aria-hidden="true">
 							<i class="fa-solid fa-pen-ruler"></i>
 						</div>
@@ -212,7 +220,7 @@
 						</div>
 					</article>
 
-					<article class="service-card service-card--pink">
+					<article class="service-card service-card--pink" id="website-seo">
 						<div class="service-icon" aria-hidden="true">
 							<i class="fa-solid fa-chart-line"></i>
 						</div>
@@ -536,9 +544,46 @@
 
 
 		<!-- Footer -->
+<<<<<<< HEAD
 		<div class="container-fluid bgcolor pt-3" id="contact">
 			<div class="row pb-5">
 				<div class="col-md-4 text-center offset-md-4">
+=======
+		<div class="container-fluid bgcolor" id="contact" aria-labelledby="footer-contact-title">
+			<div class="footer-contact-inner">
+				<div class="footer-contact-main">
+					<div class="footer-contact-copy">
+						<p class="footer-contact-eyebrow">LET'S BUILD SOMETHING GOOD</p>
+						<h2 id="footer-contact-title">Have a project in mind?<br><span>Let’s talk.</span></h2>
+						<p class="footer-contact-description">Tell me what you’re planning, and we can figure out the right next step together.</p>
+					</div>
+					<a class="footer-contact-cta" href="#offcanvasWithBothOptions" data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+						Start a conversation <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+					</a>
+				</div>
+
+				<div class="footer-contact-details" aria-label="Contact details">
+					<a class="footer-contact-card" href="mailto:fajumoe@gmail.com">
+						<span class="footer-contact-icon" aria-hidden="true"><i class="fa-regular fa-envelope"></i></span>
+						<span class="footer-contact-info">
+							<span>Email me</span>
+							<strong>fajumoe@gmail.com</strong>
+						</span>
+						<i class="fa-solid fa-arrow-up-right-from-square footer-contact-external" aria-hidden="true"></i>
+					</a>
+					<a class="footer-contact-card" href="tel:+2348108805480">
+						<span class="footer-contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+						<span class="footer-contact-info">
+							<span>Call me</span>
+							<strong>+234 810 880 5480</strong>
+						</span>
+						<i class="fa-solid fa-arrow-up-right-from-square footer-contact-external" aria-hidden="true"></i>
+					</a>
+				</div>
+
+				<div class="footer-contact-bottom">
+>>>>>>> main
 					<a class="navbar-brand logo footer-logo" href="#hero" id="footerlogo" aria-label="Dev Fajumo home">
 						<svg class="logo-mark" viewBox="0 0 48 48" role="img" aria-labelledby="footerLogoTitle">
 							<title id="footerLogoTitle">DF monogram</title>
@@ -547,14 +592,20 @@
 							<path
 								d="M11 12h8c8 0 13 4.7 13 12s-5 12-13 12h-8V12Zm6 5v14h2c4.5 0 7-2.4 7-7s-2.5-7-7-7h-2Z"
 								fill="#78c0ff" />
+<<<<<<< HEAD
 							<path d="M23 18h11M23 18v14M23 25h9" fill="none" stroke="#edf5ff" stroke-linecap="round"
 								stroke-width="2.5" />
+=======
+							<path d="M23 18h11M23 18v14M23 25h9" fill="none" stroke="#edf5ff"
+								stroke-linecap="round" stroke-width="2.5" />
+>>>>>>> main
 						</svg>
 						<span class="logo-wordmark">
 							<span class="logo-name">Fajumo</span>
 							<span class="logo-caption">DEV</span>
 						</span>
 					</a>
+<<<<<<< HEAD
 					<h3 class="py-3">Are You Ready to Work with Me? <br>Don't be Shy, Say Hello!</h3>
 					<div class="d-flex justify-content-center py-5">
 						<a href="mailto:fajumoe@gmail.com" class="px-5 fs-5">fajumoe@gmail.com</a>
@@ -569,6 +620,9 @@
 			<div class="row">
 				<div class="col-md-12 contact-accent">
 
+=======
+					<p>© 2026 Emmanuel Fajumo. All rights reserved.</p>
+>>>>>>> main
 				</div>
 			</div>
 		</div>
@@ -578,12 +632,19 @@
 
 
 
-		<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+		<div class="offcanvas offcanvas-start contact-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
 			aria-labelledby="offcanvasWithBothOptionsLabel">
 			<div class="offcanvas-header">
-				<h5 class="offcanvas-title text-light" id="offcanvasWithBothOptionsLabel">Kindly State Your Request</h5>
+				<div class="contact-panel-brand">
+					<span class="contact-panel-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+					<div>
+						<span class="contact-panel-brand-title">Project inquiry</span>
+						<span class="contact-panel-brand-note">Let’s make something great</span>
+					</div>
+				</div>
 				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			</div>
+<<<<<<< HEAD
 			<div class="offcanvas-body bg-dark">
 				<form id="contact-form">
 					<label class="form-label text-light" for="mess">Your message</label>
@@ -592,7 +653,35 @@
 					<p class="whatsapp-note">This opens WhatsApp with your message ready to send.</p>
 					<button type="submit" class="btn btn-lg form-control form-control-lg mt-3">Continue to
 						WhatsApp</button>
+=======
+			<div class="offcanvas-body contact-panel-body">
+				<div class="contact-panel-intro">
+					<span class="contact-panel-eyebrow">START A CONVERSATION</span>
+					<h2 id="offcanvasWithBothOptionsLabel">What can I help you build?</h2>
+					<p>Share a few details about your project. I’ll get back to you to discuss the next steps.</p>
+				</div>
+				<form id="contact-form" class="contact-form">
+					<label class="contact-form-label" for="mess">
+						Your message <span>Required</span>
+					</label>
+					<textarea class="form-control" placeholder="Tell me about your idea, goals, or timeline…" id="mess"
+						maxlength="2000" rows="6" required></textarea>
+					<div class="contact-form-meta">
+						<span>More detail helps me give you a useful reply.</span>
+						<span>Max 2,000 characters</span>
+					</div>
+					<button type="submit" class="contact-submit">
+						<i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+						Continue on WhatsApp
+						<i class="fa-solid fa-arrow-up-right-from-square contact-submit-arrow" aria-hidden="true"></i>
+					</button>
+					<p class="contact-panel-note">WhatsApp opens with your message ready to send.</p>
+>>>>>>> main
 				</form>
+				<div class="contact-panel-alternative">
+					<span>Prefer email?</span>
+					<a href="mailto:fajumoe@gmail.com">fajumoe@gmail.com <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+				</div>
 			</div>
 		</div>
 
